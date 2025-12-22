@@ -1,0 +1,49 @@
+/* global */
+body {
+  background-color: #f8f9fa;
+  line-height: 1.7;
+}
+
+.content {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* carousel */
+.carousel img {
+  max-height: 380px;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+#carouselTitle {
+  font-size: 1.1rem;
+}
+
+/* section text */
+.section {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.section p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+/* icon list */
+.feature-list {
+  padding-left: 1rem;
+}
+
+.feature-list li {
+  margin-bottom: 6px;
+}
