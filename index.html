@@ -97,56 +97,73 @@
     <h2>🕞 Highlight (Update yang akan datang)</h2>
     <ul class="feature-list">
       <li>Dark Theme</li>
-      <li>Data Identitas Sekolah</li>
+      <!-- <li>Data Identitas Sekolah</li> -->
       <li>Penilaian Kelas 1-3</li>
     </ul>
     <span><b>⚠️ Caution:</b><br> Update yang sudah rilis/development branch akan ditampilkan pratinjau-nya di sini:</span>
     <br>
+
   <!-- Carousel -->
-  <div class="border rounded p-2 bg-white">
-    <div id="dashboardCarouselPreview" class="carousel slide" data-bs-ride="carousel">
+    <div class="border rounded p-2 bg-white">
+      <div id="dashboardCarouselPreview" class="carousel slide" data-bs-ride="carousel">
 
-      <div class="carousel-inner">
-        <div class="carousel-item active"
-             data-title="Dashboard Light"
-             data-desc="Tampilan dalam mode terang (In development)">
-          <img src="./assets/dashboardLight.png" class="d-block w-100" alt="Dashboard Light">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active"
+              data-title="Dashboard (Light Mode)"
+              data-desc="Tampilan dalam mode terang (In development)">
+            <img src="./assets/dashboardLight.png" class="d-block w-100" alt="Dashboard Light">
+          </div>
+
+          <div class="carousel-item"
+              data-title="Dashboard (Dark Mode)"
+              data-desc="Tampilan dalam mode gelap (In development)">
+            <img src="./assets/dasboardDark.png" class="d-block w-100" alt="Dashboard Dark">
+          </div>
+
+          <div class="carousel-item"
+              data-title="Data Siswa (Light Mode)"
+              data-desc="Tampilan dalam mode terang (In development)">
+            <img src="./assets/dataSiswaLight.png" class="d-block w-100" alt="Data Siswa Light">
+          </div>
+
+          <div class="carousel-item"
+              data-title="Data Siswa (Dark Mode)"
+              data-desc="Tampilan dalam mode gelap (In development)">
+            <img src="./assets/dataSiswaDark.png" class="d-block w-100" alt="Data Siswa Dark">
+          </div>
+
+          <div class="carousel-item"
+              data-title="Mata Pelajaran (Light Mode)"
+              data-desc="Tampilan dalam mode terang (In development)">
+            <img src="./assets/mapelLight.png" class="d-block w-100" alt="Mapel Light">
+          </div>
+
+          <div class="carousel-item"
+              data-title="Mata Pelajaran (Dark Mode)"
+              data-desc="Tampilan dalam mode gelap (In development)">
+            <img src="./assets/mapelDark.png" class="d-block w-100" alt="Mapel Dark">
+          </div>
+
         </div>
 
-        <div class="carousel-item"
-             data-title="Dashboard Dark"
-             data-desc="Tampilan dalam mode gelap (In development)">
-          <img src="./assets/dashboardDark.png" class="d-block w-100" alt="Dashboard Dark">
-        </div>
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button"
+          data-bs-target="#dashboardCarouselPreview" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
 
-        <div class="carousel-item"
-             data-title="Data Siswa Light"
-             data-desc="Tampilan dalam mode terang (In development)">
-          <img src="./assets/dataSiswaLight.png" class="d-block w-100" alt="Data Siswa Light">
-        </div>
+        <button class="carousel-control-next" type="button"
+          data-bs-target="#dashboardCarouselPreview" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
 
-        <div class="carousel-item"
-             data-title="Data Siswa Dark"
-             data-desc="Tampilan dalam mode gelap (In development)">
-          <img src="./assets/dataSiswaDark.png" class="d-block w-100" alt="Data Siswa Dark">
-        </div>
       </div>
 
-      <!-- Controls -->
-      <button class="carousel-control-prev" type="button"
-        data-bs-target="#dashboardCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-
-      <button class="carousel-control-next" type="button"
-        data-bs-target="#dashboardCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+      <p id="carouselTitlePreview" class="mt-3 text-center fw-semibold"></p>
+      <p id="carouselDescPreview" class="text-center text-muted small"></p>
     </div>
 
-    <p id="carouselTitlePreview" class="mt-3 text-center fw-semibold"></p>
-    <p id="carouselDescPreview" class="text-center text-muted small"></p>
-  </div>
 
   </div>
 
@@ -234,13 +251,43 @@
       © 2025 • PKM1 | Licensed under <span class="text-info">MIT License</span>
     </p>
 
-    <p class="small mb-0">
-      📧 Kontak:
-      <a href="mailto:yudhdarma04@gmail.com" class="text-decoration-none text-info">
-        yudhdarma04@gmail.com
+    <div class="d-flex justify-content-center align-items-center gap-4 mt-2">
+      
+      <span>Kontak Saya:</span>
+ 
+      <!-- Email -->
+      <a
+        href="mailto:yudhdarma04@gmail.com
+        ?subject=Feedback%20Aplikasi%20Penilaian%20dan%20Rekap%20Nilai%20Otomatis%20v2.3.0
+        &body=Kritik%20dan%20Saran,%0A%0A"
+        class="text-info text-decoration-none d-flex align-items-center gap-2"
+        aria-label="Email"
+      >
+        <i class="bi bi-envelope-fill fs-2"></i>
+        <!-- <span class="small">Email</span> -->
       </a>
-    </p>
 
+      <!-- github -->
+      <a href="https://github.com/Yu4ha"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-info text-decoration-none d-flex align-items-center gap-2"
+        aria-label="github">
+        <i class="bi bi-git fs-2"></i>
+        <!-- <span class="small">Instagram</span> -->
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/qr/X3O7Q7PSQ6PUA1"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-info text-decoration-none d-flex align-items-center gap-2"
+        aria-label="WhatsApp">
+        <i class="bi bi-whatsapp fs-2"></i>
+        <!-- <span class="small">WhatsApp</span> -->
+      </a>
+
+    </div>
 
   </div>
 </footer>
@@ -250,12 +297,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-  /**
-   * Bind carousel dengan title & description
-   * @param {string} carouselId
-   * @param {string} titleId
-   * @param {string} descId
-   */
+
   function bindCarouselText(carouselId, titleId, descId) {
     const carousel = document.getElementById(carouselId);
     const title = document.getElementById(titleId);
@@ -276,11 +318,9 @@
 
     carousel.addEventListener('slid.bs.carousel', updateText);
 
-    // init saat pertama load
     updateText();
   }
 
-  // ===== BIND SEMUA CAROUSEL =====
 
   bindCarouselText(
     'dashboardCarousel',
